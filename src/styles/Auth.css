@@ -1,0 +1,29 @@
+.background{
+    background-image: url(../img/Logo.png);
+    position: absolute;
+    width: 1440px;
+    height: 1024px;
+    left: 0px;
+    top: 0px;
+    
+    opacity: 0.6;
+    filter: blur(10px);
+}
+
+.frameReg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px;
+    gap: 32px;
+
+    position: absolute;
+    width: 409px;
+    height: 382px;
+    left: calc(50% - 409px/2 - 0.5px);
+    top: calc(50% - 382px/2);
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+
+}
