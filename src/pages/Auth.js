@@ -6,7 +6,7 @@ const Auth = () => {
     return (
         <div>
             <div className='background'>
-                AUTH
+                
             </div>
             <FrameReg />
         </div>
