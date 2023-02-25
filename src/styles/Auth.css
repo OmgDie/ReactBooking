@@ -118,23 +118,19 @@
     height: 19px;
 
     font-family: 'Roboto';
-font-style: normal;
-font-weight: 300;
-font-size: 16px;
-line-height: 19px;
-/* identical to box height */
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
 
-display: flex;
-align-items: center;
+    display: flex;
+    align-items: center;
 
-color: #424242;
+    color: #424242;
 
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-flex-grow: 0;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 .password{
     width: 56px;
@@ -145,7 +141,6 @@ font-style: normal;
 font-weight: 300;
 font-size: 16px;
 line-height: 19px;
-/* identical to box height */
 
 display: flex;
 align-items: center;
@@ -153,7 +148,6 @@ align-items: center;
 color: #424242;
 
 
-/* Inside auto layout */
 
 flex: none;
 order: 0;
