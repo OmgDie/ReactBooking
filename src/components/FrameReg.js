@@ -4,23 +4,39 @@ import React from 'react';
 const FrameReg = () => {
     return (
             <div className='frameReg'>
-                <h4 className='brand'>Simple Holet Check</h4>
+                <strong className='brand'>
+                    Simple Hotel Check
+                </strong>
                 
-                    <div className='inputbox'>
-                        <div className='login'>
+                <div className='inputbox'>
+                    <div className='logFrame'>
+                        <div className='description'>
                             Логин
                         </div>
+                        <input className='inputFrame'>
+
+                        </input>
+                        <div className='error'>
+                        Описание ошибки будет тут
+                        </div>
                     </div>
-                    <div className='inputbox'>
-                        <div className='password'>
+                    <div className='pswFrame'>
+                        <div className='description'>
                             Пароль
                         </div>
-                    </div>
-                    <button className='buttonEnter'>
-                        <div className='enter'>
-                            Войти
+                        <input className='inputFrame'>
+
+                        </input>
+                        <div className='error'>
+                        Описание ошибки будет тут
                         </div>
-                    </button>
+                    </div>  
+                </div>
+                <button className='loginButton'>
+                    <div className='enter'>
+                            Войти
+                    </div>
+                </button>
             </div>
     );
 };
