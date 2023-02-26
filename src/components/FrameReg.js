@@ -1,5 +1,5 @@
 import React from 'react';
-
+import frameStyles from './FrameReg.css'
 
 const FrameReg = () => {
     return (
