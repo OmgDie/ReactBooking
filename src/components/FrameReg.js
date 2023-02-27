@@ -67,9 +67,8 @@ const FrameReg = () => {
                         <div className='description'>
                             Логин
                         </div>
-                        <input onChange={e => emailHandler(e)} value={email} onBlur={e => blurHandler(e)} name='email' type='text' className='inputFrame'>
+                        <input onChange={e => emailHandler(e)} value={email} onBlur={e => blurHandler(e)} name='email' type='text' className='inputFrame'/>
 
-                        </input>
                         {(emailDirty && emailError) && <div className='error'>
                         {emailError}
                         </div>}
@@ -78,9 +77,8 @@ const FrameReg = () => {
                         <div className='description'>
                             Пароль
                         </div>
-                        <input onChange={e => passwordHandler(e)} value={password} onBlur={e => blurHandler(e)} name='password' type='password' className='inputFrame'>
+                        <input onChange={e => passwordHandler(e)} value={password} onBlur={e => blurHandler(e)} name='password' type='password' className='inputFrame'/>
 
-                        </input>
                         {(passwordError && passwordDirty) && <div className='error'>
                         {passwordError}
                         </div>}
