@@ -10,7 +10,7 @@ const FrameReg = () => {
     const [passwordError, setPasswordError] = useState('Пароль не может быть пустым')
     const [formValid, setFormValid] = useState(false)
 
-
+//Если пользователь покинул поле ввода и оставил пустым, вызываем ошибку
     const blurHandler = (e) => {
         switch(e.target.name) {
             case 'email':
@@ -29,6 +29,7 @@ const FrameReg = () => {
             setFormValid(true)
         }
     }, [emailError, passwordError]) //Если изменяется какой-либо элемент массива, то вызывается функция, переданная 1-ым параметром
+
 //Валидация логина
     const emailHandler = (e) => {
         setEmail(e.target.value) //Изменяем состояние на значение, которое находится в текущем таргете
@@ -42,6 +43,7 @@ const FrameReg = () => {
             setEmailError('')
         }
     }
+    
 //Валидация пароля
     const passwordHandler = (e) => {
         setPassword(e.target.value) //изменяем состояние по аналогии с логином
