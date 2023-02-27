@@ -43,7 +43,7 @@ const FrameReg = () => {
             setEmailError('')
         }
     }
-    
+
 //Валидация пароля
     const passwordHandler = (e) => {
         setPassword(e.target.value) //изменяем состояние по аналогии с логином
