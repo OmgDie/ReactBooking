@@ -1,5 +1,5 @@
 import React from 'react';
-import FrameReg from '../components/FrameLog'
+import FrameLog from '../components/FrameLog';
 import styles from '../styles/Auth.css';
 
 const Auth = () => {
@@ -8,7 +8,7 @@ const Auth = () => {
             <div className='background'>
                 
             </div>
-            <FrameReg />
+            <FrameLog />
         </div>
         
     );

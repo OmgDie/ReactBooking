@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { BOOKING_ROUTE } from '../utils/consts';
 
 
-const FrameReg = () => {
+const FrameLog = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [emailDirty, setEmailDirty] = useState(false)
@@ -70,7 +70,7 @@ const FrameReg = () => {
     }
 
     return (
-            <div className='frameReg'>
+            <div className='frameLog'>
                 <strong className='brand'>
                     Simple Hotel Check
                 </strong>
@@ -106,4 +106,4 @@ const FrameReg = () => {
     );
 };
 
-export default FrameReg;
+export default FrameLog;
