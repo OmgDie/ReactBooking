@@ -1,5 +1,5 @@
 import React from 'react';
-import bookingstyles from './BookingScreen.css'
+import bookingstyles from '../styles/BookingScreen.css'
 
 const BookingScreen = () => {
     return (

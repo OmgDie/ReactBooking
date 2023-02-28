@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import frameStyles from './FrameLog.css'
+import frameStyles from '../styles/FrameLog.css'
 import { login } from '../store/user/userStore'
 import { action } from '../store';
 import { useNavigate } from "react-router-dom";
