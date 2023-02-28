@@ -6,8 +6,8 @@ import { userReducer } from './user/userStore'
 
 const sagaMiddleware = createSagaMiddleware()
 const store = configureStore(
-  {reducer:{user:userReducer},
-  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(sagaMiddleware),}
+    {reducer:{user:userReducer},
+    middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(sagaMiddleware),}
 )
 export const action = type => store.dispatch( type )
 sagaMiddleware.run(rootSaga)
