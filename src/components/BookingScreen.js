@@ -1,24 +1,81 @@
 import React from 'react';
-import bookingstyles from '../styles/BookingScreen.css'
+import '../styles/BookingScreen.css';
 
 const BookingScreen = () => {
     return (
-        <div>
+        <div className='desktop2'>
             <nav>
                 <div className='brandNav'>
                     Simple Hotel Check
                 </div>
                 <div className='exitButton'>
-                    Выйти
+                    <div>
+                        Выйти
+                    </div>
+                    <div className='logout-picture' />
                 </div>
             </nav>
             <main>
                 <section>
-                    <div className='datePicker'>
-
+                    <div className='section-frame'>
+                        <div className='inputbox-searching'>
+                            <div className='block'>
+                                <div className='frame-header'>
+                                    Локация
+                                </div>
+                                <div className='frame'>
+                                    <div className='frame-input'>
+                                        Москва
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='block'>
+                                
+                                <div className='frame-header'>
+                                        Дата заселения
+                                </div>
+                                <div className='frame'>
+                                    <div className='frame-input'>
+                                            07.02.2022
+                                    </div>
+                                    <div className='calendar-picture'/>
+                                </div>
+                                
+                            </div>
+                            <div className='block'>
+                                <div className='frame-header'>
+                                    Количество дней
+                                </div>
+                                <div className='frame'>
+                                    <div className='frame-input'>
+                                        1
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='button'>
+                            <div className='enter'>
+                                Найти
+                            </div>
+                        </div>
                     </div>
-                    <div className='favorites'>
-
+                    <div className='section-frame'>
+                        <div className='favorites-header'>
+                            Избранное
+                        </div>
+                        <div className='frame-filter'>
+                            <div className='btn-filter'>
+                                    <div className='btn-text'>Рейтинг</div>
+                                    <div className='filter-picture'/>
+                            </div>
+                            <div className='btn-filter'>
+                                    <div className='btn-text'>Цена</div>
+                                    <div className='filter-picture'/>    
+                            </div>
+                        </div>
+                        <div className='inputbox-searching'>
+                                123123
+                        </div>
                     </div>
                 </section>
                 <aside>

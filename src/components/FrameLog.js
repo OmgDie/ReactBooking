@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import frameStyles from '../styles/FrameLog.css'
+import '../styles/FrameLog.css'
 import { login } from '../store/user/userStore'
 import { action } from '../store';
 import { useNavigate } from "react-router-dom";
@@ -76,7 +76,7 @@ const FrameLog = () => {
                 </strong>
                 
                 <div className='inputbox'>
-                    <div className='logFrame'>
+                    <div className='block'>
                         <div className='description'>
                             Логин
                         </div>
@@ -86,7 +86,7 @@ const FrameLog = () => {
                         {emailError}
                         </div>}
                     </div>
-                    <div className='pswFrame'>
+                    <div className='block'>
                         <div className='description'>
                             Пароль
                         </div>
@@ -97,7 +97,7 @@ const FrameLog = () => {
                         </div>}
                     </div>  
                 </div>
-                <button onClick={submit} disabled={!formValid} type='submit' className='loginButton'>
+                <button onClick={submit} disabled={!formValid} type='submit' className='button'>
                     <div className='enter'>
                             Войти
                     </div>
