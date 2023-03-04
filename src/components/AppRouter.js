@@ -4,12 +4,13 @@ import { publicRoutes, authRoutes } from '../routes';
 import { AUTH_ROUTE } from '../utils/consts';
 
 const AppRouter = () => {
+    const data = sessionStorage.getItem('token')
     return (
         <Routes>
-            {publicRoutes.map(({path, Component}) =>
+            {data && authRoutes.map(({path, Component}) =>
                 <Route key={path} path={path} element={<Component/>} exact/>
             )}
-            {authRoutes.map(({path, Component}) =>
+            {publicRoutes.map(({path, Component}) =>
                 <Route key={path} path={path} element={<Component/>} exact/>
             )}
             <Route path='*' element={<Navigate to={AUTH_ROUTE}/>} />
