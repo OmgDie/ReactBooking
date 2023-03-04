@@ -1,6 +1,6 @@
 import React from 'react';
 import FrameLog from '../components/FrameLog';
-import styles from '../styles/Auth.css';
+import '../styles/Auth.css';
 
 const Auth = () => {
     return (
